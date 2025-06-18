@@ -1,7 +1,8 @@
 {
   "name": "Python 3.11 + Nix",
   "build": {
-    "dockerfile": "Dockerfile"
+    "dockerfile": "Dockerfile",
+    "context": "."
   },
   "settings": {
     "terminal.integrated.shell.linux": "/bin/bash"
