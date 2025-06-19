@@ -5,8 +5,8 @@
     "context": "."
   },
   "remoteUser": "vscode",
-  "postCreateCommand": ". /home/vscode/.nix-profile/etc/profile.d/nix.sh && nix --version && nix flake show .",
   "settings": {
     "terminal.integrated.shell.linux": "/bin/bash"
-  }
+  },
+  "postCreateCommand": "nix --version && nix flake show ."
 }
