@@ -1,11 +1,9 @@
 {
-  "name": "Python 3.11 + Nix",
+  "name": "DeepSeek Bot (Python + Nix)",
   "build": {
     "dockerfile": "Dockerfile",
     "context": "."
   },
-  "settings": {
-    "terminal.integrated.shell.linux": "/bin/bash"
-  },
-  "remoteUser": "vscode"
+  "remoteUser": "vscode",
+  "postCreateCommand": ". /home/vscode/.nix-profile/etc/profile.d/nix.sh && nix --version"
 }
